@@ -4,11 +4,11 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "bigletters"
-version = "0.2.0"
+version = "0.3.0"
 description = "A random letter, word, clock or countdown fills your whole terminal with colors, effects and animations"
 readme = "README.md"
 requires-python = ">=3.8"
-keywords = ["terminal", "animation", "screensaver", "ascii-art", "truecolor"]
+keywords = ["terminal", "animation", "screensaver", "ascii-art", "truecolor", "fish"]
 classifiers = [
     "Environment :: Console",
     "Programming Language :: Python :: 3",
@@ -16,7 +16,7 @@ classifiers = [
 ]
 
 [project.scripts]
-bigletters = "bigletter:main"
+bigletters = "bigletters.cli:main"
 
 [tool.setuptools]
-py-modules = ["bigletter"]
+packages = ["bigletters"]
